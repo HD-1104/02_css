@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 상품 출력 레이아웃</title>
+      <style>
+        div {border: 1px solid rgba(106, 15, 224, 0.881);}
+        
+        .wrap { width: 80%; 
+                margin :0 auto;    /* 중앙에 배치 */
+         
+        }
+       .dl { width: 200px;
+         height: 200px;  
+         float: left; 
+         margin: 50px;   /* 블락으로 떨어진 박스를 인라인 형식으로 바꿈  */ }
+       
+         .clear { 
+        /* float 속성을 제거함. both : left. right */
+        color: both;
+      }
+      </style>
+
+
+
+</head>
+<body>
+    
+        <!-- emet : 코드 자동 완성 , vscode 에 내장되어 있음. 
+          예제 : div.weap>div.dl*20     
+        -->
+       <div class="weap">
+        <div class="dl">1</div>
+        <div class="dl">2</div>
+        <div class="dl">3</div>
+        <div class="dl">4</div>
+        <div class="dl">5</div>
+        <div class="dl">6</div>
+        <div class="dl">7</div>
+        <div class="dl">8</div>
+        <div class="dl">9</div>
+        <div class="dl">10</div>
+         
+        <!--  플랫 속성을 제거  -->
+        <div class="clear"> </div>
+
+
+        <div class="dl">11</div>
+        <div class="dl">12</div>
+        <div class="dl">13</div>
+        <div class="dl">14</div>
+        <div class="dl">15</div>
+        <div class="dl">16</div>
+        <div class="dl">17</div>
+        <div class="dl">18</div>
+        <div class="dl">19</div>
+        <div class="dl">20</div>
+       </div>
+         
+
+
+
+
+</body>
+</html>

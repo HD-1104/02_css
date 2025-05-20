@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 선택자</title>
+    <style>
+        .wrap {
+            margin: 0 auto;
+            width: 80%;
+        }
+
+        /* 링크에 대한 가상 선택자 */
+        a:link {
+            color: aqua;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: brown;
+            text-decoration: dotted;
+        }
+
+        a:hover {
+            color: blueviolet;
+            text-decoration: none;
+        }
+
+        a:active {
+            color: red;
+            text-decoration: double;
+        }
+
+        /* div 요소에 대한 가상 선택자 */
+        div.dl:hover {
+            color: brown;
+            font-size: large;
+        }
+
+        div.dl:active {
+            color: blue;
+            font-size: 70px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrap">
+        <p><a href="http://www.w3.org" target="_blank">W3C 방문</a> : 잘 확인 </p>
+        <p><a href="https://www.google.com" target="_blank">구글</a></p>
+        <p><a href="https://www.naver.com" target="_blank">네이버</a></p>
+        <p><a href="https://www.daum.net" target="_blank">다음</a></p>
+
+        <div class="dl">마우스를 올렸을 때</div>
+    </div>
+
+</body>
+
+</html>
+
+
+

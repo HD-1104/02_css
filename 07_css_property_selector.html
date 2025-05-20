@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성(property)</title>
+    <style>
+        /* text 속성 값이 addr1인 h1 태그에 스타일을 적용 */
+        h1[text="addr1"] {
+            color: rgb(243, 10, 10);
+            background-color: rgb(246, 8, 8);
+        }
+        
+        /* text 속성 값이 addr2인 h1 태그에 스타일을 적용 */
+        h1[text="addr2"] { 
+            color: blue;
+            background-color: yellow;
+        }
+        
+        /* text 속성 값이 addr3인 h1 태그에 스타일을 적용 */
+        h1[text="addr3"] { 
+            color: green;
+            background-color: pink;
+        }
+
+        /* text 속성값이 'attr3'인 h3 태그 */
+        h3[text="attr3"] { 
+            color: green;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 속성 선택자 사용 -->
+    <h1 text="addr1">text 속성이름 선택자 1</h1>
+    <h1 text="addr2">text 속성이름 선택자 2</h1>
+    <h1 text="addr3">text 속성이름 선택자 3</h1>
+    <h1>속성 선택자 없음</h1>  <!-- text 속성이 없으므로 기본 스타일 적용 -->
+    <p>속성 선택 없음</p>
+  
+</body>
+
+</html>
